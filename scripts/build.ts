@@ -69,6 +69,10 @@ async function buildIconsPackage() {
     "module": "./dist/index.js",
     "types": "./dist/index.d.ts",
     "author": "@planetabhi",
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/planetabhi/ui3-icons.git"
+    },
     "exports": {
       ".": {
         "import": "./dist/index.js",
@@ -227,6 +231,10 @@ export interface IconProps extends React.SVGProps<SVGSVGElement> {
     "module": "./dist/index.js",
     "types": "./dist/index.d.ts",
     "author": "@planetabhi",
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/planetabhi/ui3-icons.git"
+    },
     "exports": {
       ".": {
         "import": "./dist/index.js",
@@ -394,6 +402,10 @@ export interface IconProps {
     "module": "./dist/index.js",
     "types": "./dist/index.d.ts",
     "author": "@planetabhi",
+    "repository": {
+    "type": "git",
+    "url": "git+https://github.com/planetabhi/ui3-icons.git"
+    },
     "exports": {
       ".": {
         "import": "./dist/index.js",
