@@ -5,11 +5,11 @@ export const Header: React.FC = () => {
     <header className="header">
       <div className="container">
         <h1>UI3 Icons</h1>
-        <p>Polished, cleaned up, and optimized UI3 icons, using base shapes sourced from the UI3 community file provided by Figma.</p>
+        <p>Polished, cleaned, and optimized UI3 icons, using base shapes sourced from the UI3 community file provided by Figma.</p>
         <nav>
           <ul>
             <li>
-              <a href="https://www.npmjs.com/package/@ui3/icon" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.npmjs.com/package/@ui3/icons" target="_blank" rel="noopener noreferrer">
                 Optimized SVGs
               </a>
               </li>

@@ -69,11 +69,11 @@ importers:
   website:
     dependencies:
       '@ui3/icons':
-        specifier: workspace:*
-        version: link:../packages/icons
+        specifier: ^0.1.0
+        version: 0.1.0
       '@ui3/react':
-        specifier: workspace:*
-        version: link:../packages/react
+        specifier: ^0.1.0
+        version: 0.1.0(react@19.1.0)
       react:
         specifier: ^19.1.0
         version: 19.1.0
@@ -762,6 +762,14 @@ packages:
 
   '@types/ws@8.18.1':
     resolution: {integrity: sha512-ThVF6DCVhA8kUGy+aazFQ4kXQ7E1Ty7A3ypFOe0IcJV8O/M511G99AW24irKrW56Wt44yG9+ij8FaqoBGkuBXg==}
+
+  '@ui3/icons@0.1.0':
+    resolution: {integrity: sha512-JXEA0Rdbh3N6mwvVxBH0BKHRujfYF5LbXgp+WEbQwi+YLufmKBrCofxXAKRxDxliaAAv8zkwsshJ1oAFViGkVw==}
+
+  '@ui3/react@0.1.0':
+    resolution: {integrity: sha512-eHLaSwTwAeMBW2o4DCPWl5JXmBde0t8bERLXmsSs0rQ/sGJDCdjzg6VhdDR5rUXuosRnjdtCs0YldlHb9e98MA==}
+    peerDependencies:
+      react: ^18.0.0
 
   '@vitejs/plugin-vue@5.2.3':
     resolution: {integrity: sha512-IYSLEQj4LgZZuoVpdSUCw3dIynTWQgPlaRP6iAvMle4My0HdYwr5g5wQAfwOeHQBmYwEkqF70nRpSilr6PoUDg==}
@@ -3277,6 +3285,12 @@ snapshots:
   '@types/ws@8.18.1':
     dependencies:
       '@types/node': 22.14.1
+
+  '@ui3/icons@0.1.0': {}
+
+  '@ui3/react@0.1.0(react@19.1.0)':
+    dependencies:
+      react: 19.1.0
 
   '@vitejs/plugin-vue@5.2.3(vite@6.2.6(@types/node@22.14.1)(sass-embedded@1.86.3)(sass@1.86.3)(terser@5.39.0)(tsx@4.19.3))(vue@3.5.13(typescript@5.8.3))':
     dependencies:

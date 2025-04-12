@@ -9,8 +9,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@ui3/icons": "workspace:*",
-    "@ui3/react": "workspace:*",
+    "@ui3/icons": "^0.1.0",
+    "@ui3/react": "^0.1.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-syntax-highlighter": "^15.6.1"
