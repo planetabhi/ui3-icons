@@ -68,6 +68,7 @@ async function buildIconsPackage() {
     "main": "./dist/index.js",
     "module": "./dist/index.js",
     "types": "./dist/index.d.ts",
+    "author": "@planetabhi",
     "exports": {
       ".": {
         "import": "./dist/index.js",
@@ -225,6 +226,7 @@ export interface IconProps extends React.SVGProps<SVGSVGElement> {
     "main": "./dist/index.js",
     "module": "./dist/index.js",
     "types": "./dist/index.d.ts",
+    "author": "@planetabhi",
     "exports": {
       ".": {
         "import": "./dist/index.js",
@@ -391,6 +393,7 @@ export interface IconProps {
     "main": "./dist/index.js",
     "module": "./dist/index.js",
     "types": "./dist/index.d.ts",
+    "author": "@planetabhi",
     "exports": {
       ".": {
         "import": "./dist/index.js",
