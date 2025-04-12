@@ -2,7 +2,7 @@
     "name": "ui3-icons",
     "private": true,
     "version": "0.1.0",
-    "description": "Polished, cleaned up, and optimized UI3 icons",
+    "description": "Polished, cleaned, and optimized UI3 icons",
     "scripts": {
       "optimize": "pnpm tsx scripts/optimize.ts",
       "build": "pnpm tsx scripts/build.ts",

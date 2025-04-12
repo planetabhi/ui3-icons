@@ -17,6 +17,16 @@
       "types": "./dist/index.d.ts"
     }
   },
+  "keywords": [
+    "ui3",
+    "figma",
+    "icons",
+    "svg",
+    "optimized",
+    "react",
+    "vue",
+    "outline"
+  ],
   "files": [
     "dist"
   ],

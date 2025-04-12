@@ -63,7 +63,7 @@ async function buildIconsPackage() {
   const packageJson = {
     "name": "@ui3/icons",
     "version": "0.1.0",
-    "description": "Polished, cleaned up, and optimized UI3 icons",
+    "description": "Polished, cleaned, and optimized UI3 icons",
     "type": "module",
     "main": "./dist/index.js",
     "module": "./dist/index.js",
@@ -82,6 +82,16 @@ async function buildIconsPackage() {
         "import": "./dist/icons/*"
       }
     },
+    "keywords": [
+      "ui3",
+      "figma",
+      "icons",
+      "svg",
+      "optimized",
+      "react",
+      "vue",
+      "outline"
+    ],
     "files": ["dist"],
     "scripts": {
       "build": "tsup"
@@ -241,6 +251,16 @@ export interface IconProps extends React.SVGProps<SVGSVGElement> {
         "types": "./dist/index.d.ts"
       }
     },
+    "keywords": [
+      "ui3",
+      "figma",
+      "icons",
+      "svg",
+      "optimized",
+      "react",
+      "vue",
+      "outline"
+    ],
     "files": ["dist"],
     "scripts": {
       "build": "tsup"
@@ -412,6 +432,16 @@ export interface IconProps {
         "types": "./dist/index.d.ts"
       }
     },
+    "keywords": [
+      "ui3",
+      "figma",
+      "icons",
+      "svg",
+      "optimized",
+      "react",
+      "vue",
+      "outline"
+    ],
     "files": ["dist"],
     "scripts": {
       "build": "vite build"
