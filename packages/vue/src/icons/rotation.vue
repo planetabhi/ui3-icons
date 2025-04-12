@@ -1,0 +1,41 @@
+
+<script lang="ts">
+import { defineComponent } from 'vue';
+
+export default defineComponent({
+  name: 'Rotation',
+  props: {
+    size: {
+      type: [Number, String],
+      default: 24
+    },
+    color: {
+      type: String,
+      default: 'currentColor'
+    },
+    title: {
+      type: String,
+      default: undefined
+    }
+  },
+  setup(props) {
+    return {
+      ...props
+    };
+  }
+});
+</script>
+
+<template>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    :width="size"
+    :height="size"
+    viewBox="0 0 24 24"
+    :fill="color"
+    :aria-hidden="title ? 'false' : 'true'"
+  >
+    <title v-if="title">{{ title }}</title>
+    <path fill="#000" fill-rule="evenodd" d="M9 8.5a.5.5 0 0 0-1 0v7a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 0-1H13a4 4 0 0 0-4-4zM9 12v3h3a3 3 0 0 0-3-3" clip-rule="evenodd"/>
+  </svg>
+</template>
