@@ -1,0 +1,35 @@
+{
+  "name": "@ui3/vue",
+  "version": "0.1.0",
+  "description": "Vue components for UI3 icons",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "vue-tsc && vite build"
+  },
+  "peerDependencies": {
+    "vue": "^3.3.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.4",
+    "typescript": "^5.2.2",
+    "vite": "^5.1.1",
+    "vue": "^3.3.4",
+    "vue-tsc": "^1.8.19"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "license": "MIT"
+}

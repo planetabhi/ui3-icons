@@ -1,0 +1,27 @@
+{
+    "name": "ui3-icons",
+    "private": true,
+    "version": "0.1.0",
+    "description": "Polished, cleaned up, and optimized UI3 icons",
+    "scripts": {
+      "optimize": "pnpm tsx scripts/optimize.ts",
+      "build": "pnpm tsx scripts/build.ts",
+      "build:website": "cd website && pnpm build",
+      "build:packages": "pnpm -r --filter=\"./packages/**\" build",
+      "dev": "cd website && pnpm dev",
+      "clean": "rimraf optimized && rimraf packages/**/dist",
+      "prepare": "pnpm optimize && pnpm build"
+    },
+    "author": "@planetabhi",
+    "devDependencies": {
+      "@types/node": "^22.14.1",
+      "rimraf": "^6.0.1",
+      "svgo": "^3.3.2",
+      "tsx": "^4.19.3",
+      "typescript": "^5.8.3"
+    },
+    "engines": {
+      "node": ">=18",
+      "pnpm": ">=8"
+    }
+  }
