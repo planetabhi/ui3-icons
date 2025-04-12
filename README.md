@@ -6,10 +6,17 @@
 
 ### Usage
 
+For optimized SVGs
 ```bash
-npm install @ui3/icons  // For optimized SVGs
-OR
-npm install @ui3/react  // For React components
-OR
-npm install @ui3/vue    // For Vue components
+npm install @ui3/icons
+```
+
+For React components
+```bash
+npm install @ui3/react
+```
+
+For Vue components
+```bash
+npm install @ui3/vue
 ```
