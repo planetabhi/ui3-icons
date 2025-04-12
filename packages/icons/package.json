@@ -23,8 +23,8 @@
     "build": "tsup"
   },
   "devDependencies": {
-    "tsup": "^8.0.1",
-    "typescript": "^5.2.2"
+    "tsup": "^8.4.0",
+    "typescript": "^5.8.3"
   },
   "publishConfig": {
     "access": "public"

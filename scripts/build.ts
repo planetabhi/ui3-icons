@@ -83,8 +83,8 @@ async function buildIconsPackage() {
       "build": "tsup"
     },
     "devDependencies": {
-      "tsup": "^8.0.1",
-      "typescript": "^5.2.2"
+      "tsup": "^8.4.0",
+      "typescript": "^5.8.3"
     },
     "publishConfig": {
       "access": "public"
@@ -241,10 +241,10 @@ export interface IconProps extends React.SVGProps<SVGSVGElement> {
       "react": "^18.0.0"
     },
     "devDependencies": {
-      "@types/react": "^18.2.33",
-      "react": "^18.2.0",
-      "tsup": "^8.0.1",
-      "typescript": "^5.2.2"
+      "@types/react": "^19.1.1",
+      "react": "^19.1.0",
+      "tsup": "^8.4.0",
+      "typescript": "^5.8.3"
     },
     "publishConfig": {
       "access": "public"
@@ -402,17 +402,17 @@ export interface IconProps {
     },
     "files": ["dist"],
     "scripts": {
-      "build": "vue-tsc && vite build"
+      "build": "vite build"
     },
     "peerDependencies": {
       "vue": "^3.3.0"
     },
     "devDependencies": {
-      "@vitejs/plugin-vue": "^5.0.4",
-      "typescript": "^5.2.2",
-      "vite": "^5.1.1",
-      "vue": "^3.3.4",
-      "vue-tsc": "^1.8.19"
+      "@vitejs/plugin-vue": "^5.2.3",
+      "typescript": "^5.8.3",
+      "vite": "^6.2.6",
+      "vue": "^3.5.13",
+      "vue-tsc": "^2.2.8"
     },
     "publishConfig": {
       "access": "public"
