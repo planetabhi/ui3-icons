@@ -1,0 +1,8 @@
+build:
+  command: bash cloudflare-build.sh
+  output_directory: website/dist
+  root_directory: website
+  ignore_file_paths:
+    - "**/*"
+    - "!website/**/*"
+    - "website/dist/**/*"
