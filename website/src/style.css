@@ -37,6 +37,14 @@ h1 {
   margin-bottom: 0.5rem;
 }
 
+.code {
+  font-family: var(--monospace-code);
+  background-color: var(--background-selected);
+  padding: 0.2em 0.4em;
+  font-size: var(--desktop-code);
+  line-height: var(--lh-desktop-code);
+}
+
 .search-container {
   display: flex;
   gap: 1rem;
@@ -98,4 +106,15 @@ h1 {
   position: absolute;
   top: 24px;
   right: 24px;
+}
+
+.details {
+  margin: 3rem auto;
+  max-width: 38.75rem;
+  font: normal 1.4rem/2rem var(--serif);
+}
+
+li {
+  list-style-type: "∘";
+  padding-inline-start: 1ch;
 }
