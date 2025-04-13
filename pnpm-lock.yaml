@@ -75,6 +75,9 @@ importers:
       '@new-ui/foundations':
         specifier: ^0.2.3
         version: 0.2.3
+      spacings:
+        specifier: ^0.1.0
+        version: 0.1.0
       typescript:
         specifier: ^5.8.3
         version: 5.8.3
@@ -1104,6 +1107,9 @@ packages:
   source-map@0.8.0-beta.0:
     resolution: {integrity: sha512-2ymg6oRBpebeZi9UUNsgQ89bhx01TcTkmNTGnNO88imTmbSgy4nfujrgVEFKWpMTEGA11EDkTt7mqObTPdigIA==}
     engines: {node: '>= 8'}
+
+  spacings@0.1.0:
+    resolution: {integrity: sha512-jzJ4z4EYpLwAEZOX/OH6feRkW3nACTrT6uvPf+43V4/ktQ9shvmu0SkuqM8Eyi03IW5C7SEnkDMolF8qqKcrYg==}
 
   string-width@4.2.3:
     resolution: {integrity: sha512-wKyQRQpjJ0sIp62ErSZdGsjMJWsap5oRNihHhu6G7JVO/9jIB6UyevL+tXuOqrng8j/cxKTWyWUwvSTriiZz/g==}
@@ -2161,6 +2167,8 @@ snapshots:
   source-map@0.8.0-beta.0:
     dependencies:
       whatwg-url: 7.1.0
+
+  spacings@0.1.0: {}
 
   string-width@4.2.3:
     dependencies:
