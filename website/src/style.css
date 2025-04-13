@@ -15,8 +15,7 @@ body {
   color: var(--text-primary);
   font-family: var(--sans);
   line-height: 1.5;
-  padding: 1rem;
-  max-width: 1200px;
+  padding: var(--s-00) var(--s-32) var(--s-96);
   margin: 0 auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -33,7 +32,8 @@ header {
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: var(--desktop-heading-01);
+  line-height: var(--lh-desktop-heading-01);
   margin-bottom: 0.5rem;
 }
 
@@ -81,10 +81,11 @@ h1 {
   padding: 1rem;
   cursor: pointer;
   transition: all 0.2s ease;
+  background: var(--background-high-contrast);
 }
 
 .icon-card:hover {
-  border-color: var(--primary);
+  background: var(--background-secondary);
 }
 
 .icon-svg {
