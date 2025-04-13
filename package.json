@@ -8,7 +8,6 @@
       "build": "pnpm tsx scripts/build.ts",
       "build:website": "cd website && pnpm build",
       "build:packages": "pnpm -r --filter=\"./packages/**\" build",
-      "dev": "cd website && pnpm dev",
       "clean": "rimraf optimized && rimraf packages/**/dist",
       "prepare": "pnpm optimize && pnpm build"
     },

@@ -1,7 +1,0 @@
-# Ignore everything
-*
-# Except the website folder and deploy script
-!website/**
-!cloudflare-deploy.js
-# But still ignore website/dist
-website/dist/**
