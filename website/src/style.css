@@ -1,0 +1,89 @@
+@import '@new-ui/foundations';
+
+:root {
+  --primary: #2972ff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  line-height: 1.5;
+  color: var(--text-primary);
+  background-color: var(--background);
+  padding: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.search-container {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+#search {
+  flex: 1;
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: 0.375rem;
+  background-color: var(--background);
+  color: var(--text);
+  font-size: 1rem;
+}
+
+#count {
+  white-space: nowrap;
+  opacity: 0.7;
+}
+
+.icons-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 1rem;
+}
+
+.icon-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: var(--content);
+}
+
+.icon-card:hover {
+  border-color: var(--primary);
+}
+
+.icon-svg {
+  width: 48px;
+  height: 48px;
+  transform: scale(2);
+  transform-origin: top left;
+}
+
+.icon-name {
+  font-size: 0.75rem;
+  color: var(--text-secondary-alt);
+  text-align: center;
+  word-break: break-all;
+}
