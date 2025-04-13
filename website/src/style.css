@@ -1,10 +1,18 @@
 @import '@new-ui/foundations';
 @import 'spacings';
 
+@font-face {
+  font-family: "Mono";
+  src: url("/fonts/mono.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
 :root {
   font-size: 16px;
+  --mono: "Mono";
   --sans: "copy", var(--system-ui);
-  --code: "mono", var(--monospace-code);
+  --code: var(--mono), var(--monospace-code);
   --primary: #2972ff;
   scroll-behavior: smooth;
   scroll-padding-top: 2rem;
@@ -19,30 +27,37 @@ body {
   margin: 0 auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-size: var(--desktop-body-xl);
-  line-height: var(--lh-desktop-body-xl);
+  font-size: 11px;
+  line-height: 15px;
   font-style: normal;
   min-height: 100vh;
 }
 
 header {
-  margin: var(--s-96) auto var(--s-64);
-  text-align: center;
-  max-inline-size: 32.5rem;
+  margin: var(--s-96) var(--s-64);
+  max-inline-size: 22rem;
+  font-size: 11px;
+  line-height: 15px;
 }
 
 h1 {
-  font-size: var(--desktop-heading-01);
-  line-height: var(--lh-desktop-heading-01);
+  text-transform: uppercase;
   margin-bottom: 0.5rem;
+  font-size: 15px;
+  line-height: 17px;
+}
+
+p {
+  font-size: 11px;
+  line-height: 15px;
 }
 
 .code {
-  font-family: var(--monospace-code);
-  background-color: var(--background-selected);
+  font-family: var(--code);
+  background-color: var(--background-secondary);
   padding: 0.2em 0.4em;
-  font-size: var(--desktop-code);
-  line-height: var(--lh-desktop-code);
+  font-size: 11px;
+  line-height: 15px;
 }
 
 .search-container {
@@ -59,7 +74,8 @@ h1 {
   border-radius: 0.375rem;
   background-color: var(--background);
   color: var(--text);
-  font-size: 1rem;
+  font-size: 11px;
+  line-height: 15px;
 }
 
 #count {
@@ -96,11 +112,13 @@ h1 {
 }
 
 .icon-name {
-  font-size: var(--mobile-code);
-  line-height: var(--lh-mobile-code);
+  font-size: 11px;
+  line-height: 15px;
+  font-family: var(--code);
   color: var(--text-secondary-alt);
   text-align: center;
   word-break: break-all;
+  text-transform: uppercase;
 }
 
 .git-star{
