@@ -6,7 +6,6 @@
     "scripts": {
       "optimize": "pnpm tsx scripts/optimize.ts",
       "build": "pnpm tsx scripts/build.ts",
-      "build:website": "cd website && pnpm build",
       "build:packages": "pnpm -r --filter=\"./packages/**\" build",
       "clean": "rimraf optimized && rimraf packages/**/dist",
       "prepare": "pnpm optimize && pnpm build"
