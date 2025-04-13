@@ -3,30 +3,25 @@ const icons = import.meta.glob('@ui3-icons/**/*.svg', {
     import: 'default',
     eager: true
   });
-  
   const iconsContainer = document.getElementById('icons') as HTMLDivElement;
   const searchInput = document.getElementById('search') as HTMLInputElement;
   const countSpan = document.getElementById('count') as HTMLSpanElement;
-  
   // Debug logging
   console.log(`Loaded ${Object.keys(icons).length} icons`);
-  
   // Display icons
   function displayIcons(searchTerm = '') {
     iconsContainer.innerHTML = '';
     const filteredIcons = Object.entries(icons)
       .filter(([path]) => {
-        const iconName = path.split('/').pop()?.replace('.svg', '') || '';
+        const iconName = getCleanIconName(path);
         return iconName.toLowerCase().includes(searchTerm.toLowerCase());
       });
-    
     countSpan.textContent = `${filteredIcons.length} icons`;
-    
     filteredIcons.forEach(([path, svgContent]) => {
-      const iconName = path.split('/').pop()?.replace('.svg', '') || 'icon';
+      const iconName = getCleanIconName(path);
       const card = document.createElement('div');
       card.className = 'icon-card';
-      card.title = `Click to download ${iconName}.svg`;
+      //card.title = `Download ${iconName}.svg`;
       card.innerHTML = `
         <div class="icon-svg">${svgContent}</div>
         <div class="icon-name">${iconName}</div>
@@ -36,6 +31,13 @@ const icons = import.meta.glob('@ui3-icons/**/*.svg', {
       });
       iconsContainer.appendChild(card);
     });
+  }
+  
+  // Function to clean icon name by removing the 8-character ID and .svg extension
+  function getCleanIconName(path: string): string {
+    const fileName = path.split('/').pop() || '';
+    // Remove both the 8-character ID pattern and any .svg extension
+    return fileName.replace(/-[A-Z0-9]{8}(\.svg)?$/, '').replace('.svg', '');
   }
   
   // Download SVG
@@ -50,10 +52,8 @@ const icons = import.meta.glob('@ui3-icons/**/*.svg', {
     document.body.removeChild(a);
     URL.revokeObjectURL(url);
   }
-  
   // Initialize
   displayIcons();
-  
   // Search
   searchInput.addEventListener('input', (e) => {
     displayIcons((e.target as HTMLInputElement).value);
