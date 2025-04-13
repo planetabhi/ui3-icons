@@ -160,6 +160,8 @@ a:hover {
   position: absolute;
   top: 24px;
   right: 24px;
+  transform: scale(.8);
+  transform-origin: top left;
 }
 
 .details {
