@@ -12,10 +12,10 @@
     },
     "author": "@planetabhi",
     "devDependencies": {
-      "@types/node": "^22.14.1",
+      "@types/node": "^22.15.29",
       "rimraf": "^6.0.1",
       "svgo": "^3.3.2",
-      "tsx": "^4.19.3",
+      "tsx": "^4.19.4",
       "typescript": "^5.8.3"
     },
     "engines": {
